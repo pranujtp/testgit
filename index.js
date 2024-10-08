@@ -10,4 +10,8 @@ app.get('/test', function (req, res) {
     res.status(200).send({ msg: "Deployment Success" });
 });
 
+app.post('/users', function (req, res) {
+    res.status(200).send({ msg: "Users api working good" });
+});
+
 app.listen(process.env.PORT);
